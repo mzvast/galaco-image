@@ -3,3 +3,7 @@ npm-debug.log
 yarn-error.log
 .DS_Store
 lib
+.idea
+.vscode
+.rpt2_cache
+dist
