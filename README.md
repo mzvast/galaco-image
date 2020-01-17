@@ -1,4 +1,21 @@
-# React Graceful Image
+# What is galaco-image
+
+## Background
+
+**[React Graceful Image](https://github.com/linasmnew/react-graceful-image)** Image is great for retry after loading failed, while **[react-lazy-load-image-component](https://github.com/Aljullu/react-lazy-load-image-component)** is compatible with more components such as [react-custom-scrollbars](https://github.com/malte-wessel/react-custom-scrollbars).
+
+This project refactored **React Graceful Image** with TypeScript and fix compatibility with react-custom-scrollbars.
+
+## About Tests
+
+We passed 6 out of 8 tests.(with 2 failed due to jest problem).
+
+## Future Plan
+
+- Bug will be addressed
+- New feature request is welcomed
+
+# Galaco Image
 
 An image component for gracefully dealing with image errors, by providing optional lazy loading, optional placeholder and configurable retries on failure. Particularly useful in situations where your application might be used in poor signal areas such as when travelling on a train, a bus or a car.
 
@@ -20,23 +37,23 @@ An image component for gracefully dealing with image errors, by providing option
 </table>
 
 1. Default browser behaviour when image fails due to bad signal
-2. With react-graceful-image placeholder
-3. With react-graceful-image disabled placeholder
-4. With react-graceful-image retries - if the image fails to load, the package will gracefully re-attempt loading the image again
+2. With galaco-image placeholder
+3. With galaco-image disabled placeholder
+4. With galaco-image retries - if the image fails to load, the package will gracefully re-attempt loading the image again
 
 _(***note:*** these are not mutually exclusive, for example the default behaviour makes use of both 2 & 4 together.)_
 
 ### Installation
 
 ```sh
-npm install --save react-graceful-image
+yarn add galaco-image
 ```
 
 ### Basic Usage
 
 ```js
 import React, { Component } from "react";
-import Image from "react-graceful-image";
+import Image from "galaco-image";
 
 class YourComponent extends Component {
   render() {
@@ -96,7 +113,7 @@ You can modify the default retry algorithm by supplying a `retry` prop consistin
 
 ```js
 import React, { Component } from "react";
-import Image from "react-graceful-image";
+import Image from "galaco-image";
 
 class YourComponent extends Component {
   render() {
@@ -118,7 +135,7 @@ class YourComponent extends Component {
 
 ```js
 import React, { Component } from "react";
-import Image from "react-graceful-image";
+import Image from "galaco-image";
 
 class YourComponent extends Component {
   render() {
@@ -138,7 +155,7 @@ class YourComponent extends Component {
 
 ```js
 import React, { Component } from "react";
-import Image from "react-graceful-image";
+import Image from "galaco-image";
 
 class YourComponent extends Component {
   render() {

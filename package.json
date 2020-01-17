@@ -1,49 +1,55 @@
 {
-  "name": "react-graceful-image",
-  "version": "1.2.12",
-  "description": "An image component for gracefully dealing with images errors by providing a placeholder and retries on failure",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "build": "webpack --mode production"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/linasmnew/react-graceful-image.git"
-  },
-  "author": "Linas Mickevicius <linasmnew@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/linasmnew/react-graceful-image/issues"
-  },
-  "homepage": "https://github.com/linasmnew/react-graceful-image#readme",
-  "dependencies": {
-    "lodash.throttle": "^4.1.1"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.6",
-    "enzyme": "^3.3.0",
-    "enzyme-adapter-react-16": "^1.1.1",
-    "jest": "^22.1.4",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "webpack": "^4.39.2",
-    "webpack-cli": "^3.3.7"
-  },
-  "peerDependencies": {
-    "react": ">=15.0.0",
-    "react-dom": ">=15.0.0"
-  },
-  "keywords": [
-    "react",
-    "react-component",
-    "react-image",
-    "react-placeholder"
-  ]
+    "name": "galaco-image",
+    "version": "1.0.0",
+    "description": "An image component for gracefully dealing with images errors by providing a placeholder and retries on failure",
+    "main": "dist/index.js",
+    "module": "dist/index.es.js",
+    "files": [
+        "dist"
+    ],
+    "types": "dist/index.d.ts",
+    "author": "mzvast@gmail.com",
+    "license": "MIT",
+    "scripts": {
+        "prepublish": "npm run build",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "build": "rollup -c",
+        "watch": "rollup -cw"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mzvast/react-graceful-image-plus.git"
+    },
+    "dependencies": {
+        "lodash.throttle": "^4.1.1"
+    },
+    "devDependencies": {
+        "@types/enzyme": "^3.10.4",
+        "@types/enzyme-adapter-react-16": "^1.0.5",
+        "@types/jest": "^24.9.0",
+        "@types/lodash.throttle": "^4.1.6",
+        "@types/react": "^16.9.17",
+        "@types/react-dom": "^16.9.4",
+        "enzyme": "^3.3.0",
+        "enzyme-adapter-react-16": "^1.1.1",
+        "enzyme-to-json": "^3.4.3",
+        "jest": "^24.9.0",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "rollup": "^1.16.2",
+        "rollup-plugin-typescript2": "^0.21.2",
+        "ts-jest": "^24.3.0",
+        "typescript": "=3.5.2"
+    },
+    "peerDependencies": {
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6"
+    },
+    "keywords": [
+        "react",
+        "react-component",
+        "react-image",
+        "react-placeholder"
+    ]
 }

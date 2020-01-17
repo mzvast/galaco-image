@@ -1,0 +1,1 @@
+{"code":"import GracefulImage from './GracefulImage';\r\nexport default GracefulImage;\r\n","references":["/Users/apple/@Projects/react-graceful-image-plus/src/GracefulImage.tsx"],"dts":{"name":"/Users/apple/@Projects/react-graceful-image-plus/index.d.ts","writeByteOrderMark":false,"text":"import GracefulImage from './GracefulImage';\r\nexport default GracefulImage;\r\n"}}
